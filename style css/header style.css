@@ -1,0 +1,93 @@
+
+@font-face {
+    font-family: iran;
+    src: url(../fonts/iran.ttf)
+}
+
+header{
+    font-size: 16px;
+    margin: 0px;
+}
+
+*{
+    font-family: iran;
+    direction: rtl;
+}
+
+.bgc-header{
+    box-shadow: 0px 2px 8px 0px rgba(78, 78, 78, .9);
+    margin: 10px 20px;
+    border-radius: 5px;
+    background-color: #066cba;
+    padding: 50px;
+}
+
+.container .bgc-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    overflow: hidden;
+
+}
+header .container span{
+    color: white;
+}
+
+.in-bu-buttom-right , .in-bu-top-left {
+    display: flex;
+}
+
+.bu-buttom-right input , .bu-top-left input{
+    margin-right: 5px;
+    background-color: #1892f0;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px 0px rgba(78, 78, 78, .5);
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 20px;
+    
+}
+
+.bu-buttom-left input{
+    margin-top: 10px;
+    background-color: #e81f63;
+    color: white;
+    border: 1px solid white;
+    font-size: .9em;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px 0px rgba(78, 78, 78, .5);
+    align-items: center;
+    cursor: pointer;
+}
+
+.in-top-right input , .in-buttom-right input , .in-top-left input{
+    background-color: white;
+    border: none;
+    color: #444;
+    font-size: 1em;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px 0px rgba(78, 78, 78, .5);
+    padding: 5px;
+    align-items: center;
+}
+
+/*@media screen */
+
+
+@media screen and (max-width:600px){
+    .container .bgc-header{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .in-bu-buttom-right , .in-bu-top-left {
+        display: grid;
+    }
+    .bu-buttom-right input , .bu-top-left input{
+        margin-right: 0px;
+        margin-top: 5px;
+    }
+}
+
